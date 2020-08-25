@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+    
+    <read_more>View</read_more>
+    
+    <view>View</view>
+    
+    <latest_news>Latest news</latest_news>
+    
+    <faqs>FAQs</faqs>
+    
+    <settings_data>
+        <title>Universe20 Template</title>
+
+        <!-- region Appearance -->
+        <specs is_separator="true">Appearance</specs>
+        
+        <specs key="header_logo">
+            <title>Header logo image</title>
+            <description><![CDATA[
+                Specify the website logo. It will be shown at the left of the header (above on mobile devices).<br>
+                A 24 bit PNG with transparent background is preferred.<br>
+                <i class="fa fa-info-circle"></i>
+                <b>Note:</b> make the image rectangular, in a 2:1 aspect ratio. Wider images will break the layout.
+                You might need to split your logo if it contains a long text sentence.
+            ]]></description>
+            <type>@gallery:specs_renderer/image_selector</type>
+            <options>
+                <image_size>full</image_size>
+            </options>
+        </specs>
+        
+        <specs key="alt_menu_selectors">
+            <title>Alternate menu selectors</title>
+            <description><![CDATA[
+                Specify the CSS selectors from the primary menu to be shown on the alternate menu bar
+                using one line per selector.<br>
+                Use relative selectors E.G. <code>.main_menu_item[data-module='posts']</code> or
+                by id, E.G. <code>#bardcommerce_landing_link</code>.
+            ]]></description>
+            <type>code</type>
+        </specs>
+        <!-- endregion Appearance -->
+        
+        <!-- region Home slider -->
+        <specs is_separator="true">Home slider</specs>
+        
+        <specs key="hide_slider">
+            <title>Hide the home slider?</title>
+            <description><![CDATA[
+                By default, the home slider will be shown on the home page if posts of the specified
+                category in the <span class="framed_content inlined">Posts settings</span> are published.<br><br>
+                <i class="fa fa-info-circle"></i> Note: posts are ordered <b>by title</b>, not by publishing date,
+                in order to give admins full control of the order of posts to be shown.
+            ]]></description>
+            <type>yes/no</type>
+        </specs>
+        
+        <specs key="slider_height">
+            <title>Slider height</title>
+            <description><![CDATA[
+                You can specify the slider height here. Set it to <code>0</code> (zero) or leave it empty
+                for automatic height.
+            ]]></description>
+            <type>number</type>
+        </specs>
+        
+        <specs key="slider_cache_ttl">
+            <title>Slider cache time</title>
+            <description><![CDATA[
+                <b><span class="framed_content inlined state_highlight">Cache</span></b>
+                Enter the amount of hours the slider markup should be cached.<br>
+                Leave empty or set a zero to skip it.
+            ]]></description>
+            <type>number</type>
+        </specs>
+        
+        <specs key="slider_cache_version">
+            <title>Slider cache version</title>
+            <description><![CDATA[
+                <b><span class="framed_content inlined state_highlight">Cache</span></b>
+                Bump this number to force cache regeneration.
+            ]]></description>
+            <type>number</type>
+        </specs>
+        <!-- endregion Home slider -->
+        
+        <!-- region Home layout -->
+        <specs is_separator="true">Home layout</specs>
+        
+        <specs key="pre_content_sections">
+            <title>Pre-content sections</title>
+            <description><![CDATA[
+                Specify the sections you want to show <b>before the contents</b>,
+                using one per line.<br>
+                Section keys: <code>faqs</code>, <code>features</code>, <code>mobile</code> and <code>staff</code>.  
+            ]]></description>
+            <type>code</type>
+        </specs>
+        
+        <specs key="post_content_sections">
+            <title>Post-content sections</title>
+            <description><![CDATA[
+                Specify the sections you want to show <b>after the contents</b>,
+                using one per line.<br>
+                Section keys: <code>faqs</code>, <code>features</code>, <code>mobile</code> and <code>staff</code>.  
+            ]]></description>
+            <type>code</type>
+        </specs>
+        <!-- endregion Home layout -->
+        
+        <!-- region Home sections -->
+        <specs is_separator="true">Home sections: mobile info</specs>
+        
+        <specs key="mobile_left">
+            <title>Left part markup</title>
+            <description><![CDATA[
+                Type the markup to show at the left of the screenshot.  
+            ]]></description>
+            <type>code</type>
+        </specs>
+        
+        <specs key="mobile_shot">
+            <title>Phone screenshot</title>
+            <description><![CDATA[
+                Select the image to show as screenshot.
+                It will be shown at the right of the section.  
+            ]]></description>
+            <type>@gallery:specs_renderer/image_selector</type>
+            <options>
+                <image_size>full</image_size>
+            </options>
+        </specs>
+        
+        <specs key="mobile_height">
+            <title>Section height</title>
+            <description><![CDATA[
+                Specify a height for the section.
+                Default: <code>400</code>px.
+            ]]></description>
+            <type>number</type>
+        </specs>
+        
+        <specs is_separator="true">Home sections: features</specs>
+        
+        <specs key="features_title">
+            <title>Section title</title>
+            <description><![CDATA[
+                Specify a title for the section.
+            ]]></description>
+            <type>text</type>
+        </specs>
+        
+        
+        
+        <specs key="features_top_icon">
+            <title>Top icon</title>
+            <description><![CDATA[
+                Specify an Font Awesome icon key (E.G. <code>home</code>) to show on the top slot.
+                Reference <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">here</a>.
+            ]]></description>
+            <type>text</type>
+        </specs>
+        
+        <specs key="features_top_markup">
+            <title>Top markup</title>
+            <description><![CDATA[
+                Specify the markup to show when the icon is hovered/clicked/tapped.
+            ]]></description>
+            <type>code</type>
+        </specs>
+        
+        
+        
+        <specs key="features_right_icon">
+            <title>Right icon</title>
+            <description><![CDATA[
+                Specify an Font Awesome icon key (E.G. <code>home</code>) to show on the right slot.
+                Reference <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">here</a>.
+            ]]></description>
+            <type>text</type>
+        </specs>
+        
+        <specs key="features_right_markup">
+            <title>Right markup</title>
+            <description><![CDATA[
+                Specify the markup to show when the icon is hovered/clicked/tapped.
+            ]]></description>
+            <type>code</type>
+        </specs>
+        
+        
+        
+        <specs key="features_bottom_icon">
+            <title>Bottom icon</title>
+            <description><![CDATA[
+                Specify an Font Awesome icon key (E.G. <code>home</code>) to show on the bottom slot.
+                Reference <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">here</a>.
+            ]]></description>
+            <type>text</type>
+        </specs>
+        
+        <specs key="features_bottom_markup">
+            <title>Bottom markup</title>
+            <description><![CDATA[
+                Specify the markup to show when the icon is hovered/clicked/tapped.
+            ]]></description>
+            <type>code</type>
+        </specs>
+        
+        
+        
+        <specs key="features_left_icon">
+            <title>Left icon</title>
+            <description><![CDATA[
+                Specify an Font Awesome icon key (E.G. <code>home</code>) to show on the left slot.
+                Reference <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">here</a>.
+            ]]></description>
+            <type>text</type>
+        </specs>
+        
+        <specs key="features_left_markup">
+            <title>Left markup</title>
+            <description><![CDATA[
+                Specify the markup to show when the icon is hovered/clicked/tapped.
+            ]]></description>
+            <type>code</type>
+        </specs>
+        
+        <specs is_separator="true">Home sections: staff</specs>
+        
+        <specs key="staff_title">
+            <title>Staff section title</title>
+            <description><![CDATA[
+                Use a <code>&lt;h2&gt;</code> tag to specify the title,
+                then any text below as subtitle.<br>
+                You should add a link to the staff page/post if defined.
+            ]]></description>
+            <type>code</type>
+        </specs>
+        
+        <specs key="staff_1_name">
+            <title><![CDATA[<span class="framed_content inlined state_highlight">Required</span> Person 1 name]]></title>
+            <description><![CDATA[
+                Use two lines here: the first for the person's name and the second to the person's position.
+            ]]></description>
+            <type>code</type>
+        </specs>
+        
+        <specs key="staff_1_link">
+            <title>Person 1 link</title>
+            <description><![CDATA[
+                (Optional) Specify a URL to the person's public page.
+            ]]></description>
+            <type>text</type>
+        </specs>
+        
+        <specs key="staff_1_picture">
+            <title><![CDATA[<span class="framed_content inlined state_highlight">Required</span> Person 1 picture]]></title>
+            <description><![CDATA[
+                Select the picture of the person. <b>Should be square!</b>
+            ]]></description>
+            <type>@gallery:specs_renderer/image_selector</type>
+            <options>
+                <image_size>full</image_size>
+            </options>
+        </specs>
+        
+        
+        
+        <specs key="staff_2_name">
+            <title>Person 2 name</title>
+            <description><![CDATA[
+                Use two lines here: the first for the person's name and the second to the person's position.
+            ]]></description>
+            <type>code</type>
+        </specs>
+        
+        <specs key="staff_2_link">
+            <title>Person 2 link</title>
+            <description><![CDATA[
+                (Optional) Specify a URL to the person's public page.
+            ]]></description>
+            <type>text</type>
+        </specs>
+        
+        <specs key="staff_2_picture">
+            <title>Person 2 picture</title>
+            <description><![CDATA[
+                Select the picture of the person. <b>Should be square!</b>  
+            ]]></description>
+            <type>@gallery:specs_renderer/image_selector</type>
+            <options>
+                <image_size>full</image_size>
+            </options>
+        </specs>
+        
+        
+        
+        <specs key="staff_3_name">
+            <title>Person 3 name</title>
+            <description><![CDATA[
+                Use two lines here: the first for the person's name and the second to the person's position.
+            ]]></description>
+            <type>code</type>
+        </specs>
+        
+        <specs key="staff_3_link">
+            <title>Person 3 link</title>
+            <description><![CDATA[
+                (Optional) Specify a URL to the person's public page.
+            ]]></description>
+            <type>text</type>
+        </specs>
+        
+        <specs key="staff_3_picture">
+            <title>Person 3 picture</title>
+            <description><![CDATA[
+                Select the picture of the person. <b>Should be square!</b>  
+            ]]></description>
+            <type>@gallery:specs_renderer/image_selector</type>
+            <options>
+                <image_size>full</image_size>
+            </options>
+        </specs>
+        
+        
+        
+        <specs key="staff_4_name">
+            <title>Person 4 name</title>
+            <description><![CDATA[
+                Use two lines here: the first for the person's name and the second to the person's position.
+            ]]></description>
+            <type>code</type>
+        </specs>
+        
+        <specs key="staff_4_link">
+            <title>Person 4 link</title>
+            <description><![CDATA[
+                (Optional) Specify a URL to the person's public page.
+            ]]></description>
+            <type>text</type>
+        </specs>
+        
+        <specs key="staff_4_picture">
+            <title>Person 4 picture</title>
+            <description><![CDATA[
+                Select the picture of the person. <b>Should be square!</b>  
+            ]]></description>
+            <type>@gallery:specs_renderer/image_selector</type>
+            <options>
+                <image_size>full</image_size>
+            </options>
+        </specs>
+        
+        <specs is_separator="true">Home sections: FAQs</specs>
+        
+        <specs key="faqs_category">
+            <title>FAQs category Id</title>
+            <description><![CDATA[
+                Paste the id of the category for FAQ posts.
+            ]]></description>
+            <type>text</type>
+        </specs>
+        
+        <specs key="faqs_limit">
+            <title>FAQs limit</title>
+            <description><![CDATA[
+                Specify the amount of posts to show. Defaults to <code>5</code>.
+            ]]></description>
+            <type>number</type>
+        </specs>
+        
+        <specs key="faqs_order">
+            <title>FAQs order</title>
+            <description><![CDATA[
+                Select the order for the FAQs being shown.
+            ]]></description>
+            <type>list</type>
+            <options>
+                <option value="">Older first</option>
+                <option value="newer">Newer first</option>
+                <option value="popular">Most popular</option>
+            </options>
+        </specs>
+        
+        <specs key="faqs_cache_ttl">
+            <title>FAQs cache time</title>
+            <description><![CDATA[
+                <b><span class="framed_content inlined state_highlight">Cache</span></b>
+                Enter the amount of hours the FAQs markup should be cached.<br>
+                Leave empty or set a zero to skip it.
+            ]]></description>
+            <type>number</type>
+        </specs>
+        
+        <specs key="faqs_cache_version">
+            <title>FAQs cache version</title>
+            <description><![CDATA[
+                <b><span class="framed_content inlined state_highlight">Cache</span></b>
+                Bump this number to force cache regeneration.
+            ]]></description>
+            <type>number</type>
+        </specs>
+        <!-- endregion Home sections -->
+        
+    </settings_data>
+    
+</language>

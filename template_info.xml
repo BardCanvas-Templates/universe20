@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template>
+    
+    <name>Universe20 template</name>
+    <version>1.0.0</version>
+    <group>templates_custom</group>
+    
+    <description>
+        Based on the BCF template. Fully responsive, four color sets with dark modes.
+    </description>
+    
+</template>

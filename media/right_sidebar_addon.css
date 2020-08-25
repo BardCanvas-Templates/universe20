@@ -1,0 +1,58 @@
+
+#right_sidebar { font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+                 font-size: 11pt; line-height: normal; background-color: #F4F4F4;
+                 float: right; padding: 20px; }
+
+#right_sidebar .item_container             { display: inline-block; width: 100%; margin-bottom: 20px; }
+#right_sidebar .item_container.highlighted { background-color: white; }
+
+#right_sidebar .item_container h3         { margin: 0 0 5px 0; padding: 0 0 5px 0; }
+#right_sidebar .item_container h3:empty   { display: none; }
+#right_sidebar .item_container .content   { padding: 5px; }
+
+#right_sidebar .item_container .content *:first-child { margin-top: 0; }
+#right_sidebar .item_container .content *:last-child  { margin-bottom: 0; }
+
+/* Default dimensions, for everything above  720px */
+#content                 { width: calc(100% - 150px - 240px); float: left; }
+#content.no_left_sidebar { width: calc(100% - 220px); float: left; }
+#right_sidebar           { width: 240px; margin-right: -5px; }
+
+@media all and (min-width: 100px) and (max-width: 720px)
+{
+    /* Hidden for small displays (below 720px) */
+    #content                 { width: calc(100% - 150px); float: none; }
+    #content.no_left_sidebar { width: calc(100%); float: none; }
+    #right_sidebar           { width: 100%; float: none; padding: 10px; margin-right: 0; }
+    
+    #user_info_sections { -moz-column-count:    1; -webkit-column-count:   1; column-count:   1; }
+}
+
+@media all and (min-width: 100px) and (max-width: 480px)
+{
+    /* Left sidebar is hidden here. Right sidebar goes below. 
+       We must adjust the content width. */
+    #content                 { width: 100%; float: none; }
+    #content.no_left_sidebar { width: 100%; float: none; }
+    
+    #user_info_sections { -moz-column-count:    1; -webkit-column-count:   1; column-count:   1; }
+}
+
+/* 1080p and above */
+@media all and (min-width: 1920px) and (max-width: 9999px) {
+    #content                 { width: calc(100% - 150px - 370px); float: left; }
+    #content.no_left_sidebar { width: calc(100% - 310px); float: left; }
+    #right_sidebar           { width: 370px }
+    
+    #user_info_sections { -moz-column-count:    4; -webkit-column-count:   4; column-count:   4; }
+}
+
+/* Laptop displays */
+@media all and (min-width: 1281px) and (max-width: 1366px)
+{
+    #content                 { width: calc(100% - 150px - 300px); float: left; }
+    #content.no_left_sidebar { width: calc(100% - 260px); float: left; }
+    #right_sidebar           { width: 300px }
+    
+    #user_info_sections { -moz-column-count:    2; -webkit-column-count:   2; column-count:   2; }
+}
