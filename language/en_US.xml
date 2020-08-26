@@ -22,10 +22,11 @@
             ]]></description>
             <type>list</type>
             <options>
-                <option value=""     >Blue (default)</option>
-                <option value="green">Green</option>
-                <option value="red"  >Red</option>
-                <option value="gold" >Golden</option>
+                <option value=""      >Blue (default)</option>
+                <option value="green" >Green</option>
+                <option value="red"   >Red</option>
+                <option value="gold"  >Golden</option>
+                <option value="purple">Purple</option>
             </options>
         </specs>
         
