@@ -7,7 +7,7 @@
 
 /* References */
 
-.ref-color0 { color: #202321 } /* Normal text */
+.ref-color0 { color: #3c0505 } /* Normal text */
 .ref-color1 { color: #c71c24 } /* Headings */
 .ref-color2 { color: #FFC5C6 } /* Links on dark backgrounds, bold in headings */
 .ref-color3 { color: #a31b22 } /* Links on light backgrounds */
@@ -15,9 +15,9 @@
 .ref-color5 { color: #F4F4F4 } /* Content frames, sidebars */
 .ref-color6 { color: #FF8D90 } /* Footer bullets */
 
-body     { color: #202321; background-color: #e7e7e7; }
-th       { color: #202321; }
-td       { color: #202321; }
+body     { color: #3c0505; background-color: #e7e7e7; }
+th       { color: #3c0505; }
+td       { color: #3c0505; }
 
 #user_profile_heading { background-color: #a31b22; }
 
