@@ -11,9 +11,21 @@
     
     <settings_data>
         <title>Universe20 Template</title>
-
+        
         <!-- region Appearance -->
         <specs is_separator="true">Appearance</specs>
+        
+        <specs key="theme">
+            <title>Color theme</title>
+            <description><![CDATA[
+                Select a color theme to suit your needs.
+            ]]></description>
+            <type>list</type>
+            <options>
+                <option value="">Blue (default)</option>
+                <option value="green">Green</option>
+            </options>
+        </specs>
         
         <specs key="header_logo">
             <title>Header logo image</title>

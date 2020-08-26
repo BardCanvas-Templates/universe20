@@ -29,6 +29,13 @@ foreach($template->get_includes("pre_rendering") as $module => $include)
 
 if( $template->get("no_right_sidebar") ) $template->clear_right_sidebar_items();
 
+$theme = $settings->get("templates:universe20.theme");
+switch($theme)
+{
+    case "green": $jquery_ui_theme = "south-street"; break;
+    default:      $jquery_ui_theme = "cupertino";    break;
+}
+
 header("Content-Type: text/html; charset=utf-8"); ?>
 <!DOCTYPE html>
 <html>
@@ -37,7 +44,7 @@ header("Content-Type: text/html; charset=utf-8"); ?>
     <style type="text/css">@-ms-viewport{ width: device-width; }</style>
     <meta name="viewport"              content="width=device-width, initial-scale=1">
     <? $template->set("include_notification_functions", true); ?>
-    <? $template->set("jquery_ui_theme", "ui-lightness"); ?>
+    <? $template->set("jquery_ui_theme", $jquery_ui_theme); ?>
     <? include ROOTPATH . "/includes/common_header.inc" ?>
     
     <!-- This template -->
@@ -69,6 +76,9 @@ header("Content-Type: text/html; charset=utf-8"); ?>
     
     <!-- Overrides -->
     <link rel="stylesheet" type="text/css" href="<?= $template->url ?>/media/styles2~v<?= time() ?>.css">
+    <? if( ! empty($theme) ): ?>
+        <link rel="stylesheet" type="text/css" href="<?= $template->url ?>/media/<?= $theme ?>/styles~v<?= time() ?>.css">
+    <? endif; ?>
 </head>
 <body data-orientation="landscape" data-viewport-class="0" <?=$template->get("additional_body_attributes")?>
       data-is-user-profile-page="<?= $template->get("show_user_profile_heading") ? "true" : "false" ?>"

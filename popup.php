@@ -17,6 +17,13 @@ foreach($template->get_includes("pre_rendering") as $module => $include)
     include "{$this_module->abspath}/contents/{$include}";
 }
 
+$theme = $settings->get("templates:universe20.theme");
+switch($theme)
+{
+    case "green": $jquery_ui_theme = "south-street"; break;
+    default:      $jquery_ui_theme = "cupertino";    break;
+}
+
 header("Content-Type: text/html; charset=utf-8"); ?>
 <!DOCTYPE html>
 <html>
@@ -25,7 +32,7 @@ header("Content-Type: text/html; charset=utf-8"); ?>
     <style type="text/css">@-ms-viewport{ width: device-width; }</style>
     <meta name="viewport"              content="width=device-width, initial-scale=1">
     <? $template->set("include_notification_functions", false); ?>
-    <? $template->set("jquery_ui_theme", "ui-lightness"); ?>
+    <? $template->set("jquery_ui_theme", $jquery_ui_theme); ?>
     <? include ROOTPATH . "/includes/common_header.inc" ?>
     
     <!-- This template -->
@@ -46,6 +53,9 @@ header("Content-Type: text/html; charset=utf-8"); ?>
     
     <!-- Overrides -->
     <link rel="stylesheet" type="text/css" href="<?= $template->url ?>/media/styles2~v<?= time() ?>.css">
+    <? if( ! empty($theme) ): ?>
+        <link rel="stylesheet" type="text/css" href="<?= $template->url ?>/media/<?= $theme ?>/styles~v<?= time() ?>.css">
+    <? endif; ?>
 </head>
 <body data-orientation="landscape" data-viewport-class="0" <?=$template->get("additional_body_attributes")?>  class="popup"
       data-is-known-user="<?= $account->_exists ? "true" : "false" ?>"
