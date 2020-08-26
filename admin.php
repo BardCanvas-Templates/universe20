@@ -49,7 +49,7 @@ header("Content-Type: text/html; charset=utf-8"); ?>
     <? include ROOTPATH . "/includes/common_header.inc" ?>
     
     <!-- This template -->
-    <link rel="stylesheet" type="text/css" href="<?= $template->url ?>/media/styles~v<?= "{$template->version}-1" ?>.css">
+    <link rel="stylesheet" type="text/css" href="<?= $template->url ?>/media/styles~v<?= "{$template->version}-1.0.1" ?>.css">
     <link rel="stylesheet" type="text/css" href="<?= $template->url ?>/media/post_styles~v<?= "{$template->version}-1" ?>.css">
     
     <? if( $settings->get("engine.hide_left_sidebar_on_admin_pages") != "true" && $template->count_left_sidebar_groups() > 0 ): ?>
