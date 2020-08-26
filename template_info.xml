@@ -3,10 +3,20 @@
     
     <name>Universe20 template</name>
     <version>1.0.0</version>
-    <group>templates_custom</group>
+    <group>templates_free</group>
     
     <description>
-        Based on the BCF template. Fully responsive, four color sets with dark modes.
+        Based on the BCF template. Fully responsive, with five color themes.
     </description>
+    
+    <tags>responsive, mobile, desktop, multicolor</tags>
+    
+    <author>
+        <company>LAVA SoftWorks</company>
+        <name>Alejandro Caballero</name>
+        <email>lava.caballero@gmail.com</email>
+    </author>
+    
+    <website>https://bardcanvas.com/universe20-template</website>
     
 </template>
