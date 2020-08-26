@@ -32,8 +32,11 @@ if( $template->get("no_right_sidebar") ) $template->clear_right_sidebar_items();
 $theme = $settings->get("templates:universe20.theme");
 switch($theme)
 {
-    case "green": $jquery_ui_theme = "south-street"; break;
-    default:      $jquery_ui_theme = "cupertino";    break;
+    case "green":  $jquery_ui_theme = "south-street"; break;
+    case "red":    $jquery_ui_theme = "blitzer";      break;
+    case "gold":   $jquery_ui_theme = "humanity";     break;
+    case "purple": $jquery_ui_theme = "flick";        break;
+    default:       $jquery_ui_theme = "cupertino";    break;
 }
 
 header("Content-Type: text/html; charset=utf-8"); ?>
