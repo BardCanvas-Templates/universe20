@@ -83,7 +83,7 @@ a:active, a:hover, .pseudo_link:active, .pseudo_link:hover { color: #FF8D91; }
 .dropdown_menu .main_menu_item.highlighted.current       { color: maroon;  background-color: #FF8D91; }
 .dropdown_menu .main_menu_item.highlighted.current:hover { color: white;   background-color: #FF8D91; }
 
-.framed_content                 { border: 2px solid #e6eef7; background-color: #EEF6FF; color: black; }
+.framed_content                 { border: 2px solid #f6e6e7; background-color: #FEF3F3; color: black; }
 .framed_content.state_disabled  { background-color: silver;  border-color: #a7a7a7;  color: #585858; }
 .framed_content.state_warning   { background-color: #fff1a0; border-color: #eadc8d; color: black;   }
 .framed_content.state_ko        { background-color: #EDCCC9; border-color: #d7b6b3; color: black;   }
