@@ -111,9 +111,11 @@ if( $cache_ttl > 0 ) ob_start();
     });
 </script>
 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <style type="text/css">
-    #posts_slider    { font-family: 'Segoe UI', Arial, Helvetica, sans-serif; }
-    #posts_slider    { margin-bottom: 20px; padding: 0; background-color: transparent; color: rgba(255, 255, 255, .7); }
+    #posts_slider    { font-family: 'Noto Serif', 'Times New Roman', 'Times Roman', serif; font-size: 14pt; }
+    #posts_slider    { margin-bottom: 20px; padding: 0; background-color: transparent;
+                       color: rgba(255, 255, 255, .7); text-shadow: 1px 1px 3px black; }
     #posts_slider li { padding: 20px 60px; }
     .sy-pager        { margin-top: 20px; padding-bottom: 20px; }
     .sy-slides-wrap  { <?= $slider_height ?> overflow: hidden; }
