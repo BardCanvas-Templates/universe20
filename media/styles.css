@@ -26,7 +26,7 @@ body     { font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 1
            color: #202123; background-color: #e7e7e7; }
 th       { font-family: 'Roboto Condensed', 'Arial Narrow', Arial, Helvetica, sans-serif; font-size: 11pt; color: #202123; }
 td       { font-family: 'Roboto Condensed', 'Arial Narrow', Arial, Helvetica, sans-serif; font-size: 11pt; color: #202123; }
-#header  { : 'Exo', Arial, Helvetica, sans-serif; font-size: 12pt;
+#header  { font-family: 'Exo', Arial, Helvetica, sans-serif; font-size: 12pt;
            text-shadow: 0 0 20px black; }
 #footer  { font-family: Arial, Helvetica, sans-serif; font-size: 11pt; }
 #content { line-height: 1.2em; padding-top: 20px; }
