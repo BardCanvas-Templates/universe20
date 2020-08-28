@@ -79,10 +79,10 @@ header("Content-Type: text/html; charset=utf-8"); ?>
     ?>
     
     <!-- Overrides -->
-    <link rel="stylesheet" type="text/css" href="<?= $template->url ?>/media/styles2~v<?= "{$template->version}-1" ?>.css">
+    <link rel="stylesheet" type="text/css" href="<?= $template->url ?>/media/styles2~v<?= "{$template->version}-1.0.1" ?>.css">
     <link rel="stylesheet" type="text/css" href="<?= $template->url ?>/media/home_sections~v<?= "{$template->version}-1" ?>.css">
     <? if( ! empty($theme) ): ?>
-        <link rel="stylesheet" type="text/css" href="<?= $template->url ?>/media/<?= $theme ?>/styles~v<?= "{$template->version}-1" ?>.css">    
+        <link rel="stylesheet" type="text/css" href="<?= $template->url ?>/media/<?= $theme ?>/styles~v<?= "{$template->version}-1.0.1" ?>.css">    
     <? endif; ?>
 </head>
 <body data-orientation="landscape" data-viewport-class="0" <?=$template->get("additional_body_attributes")?>
