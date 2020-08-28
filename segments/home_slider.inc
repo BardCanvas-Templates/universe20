@@ -97,28 +97,36 @@ if( $input_height > 0 )
 if( $cache_ttl > 0 ) ob_start();
 ?>
 
-<link rel="stylesheet" type="text/css" href="<?= $config->full_root_path ?>/lib/slippry-1.3.1/dist/slippry.css?v=2">
-<script type="text/javascript"          src="<?= $config->full_root_path ?>/lib/slippry-1.3.1/dist/slippry.min.js"></script>
+<script type="text/javascript" src="<?= $config->full_root_path ?>/lib/jquery-bxslider/jquery.bxslider.js"></script>
+<link rel="stylesheet" type="text/css" href="<?= $config->full_root_path ?>/lib/jquery-bxslider/jquery.bxslider.css">
+
 <script type="text/javascript">
     $(document).ready(function()
     {
-        window.__slider = $('#posts_slider').slippry({
-            start: 1, captions: false, adaptiveHeight: <?= $adaptive_height ?>, responsive: true, pause: 10000,
-            onSliderLoad: function() { $('#posts_slider').find('li').show(); }
+        window.__slider = $('#posts_slider').bxSlider({
+            mode: 'horizontal',
+            startSlide: 0,
+            captions: false,
+            adaptiveHeight: <?= $adaptive_height ?>,
+            responsive: true,
+            touchEnabled: true,
+            pause: 10000,
+            
         });
         
-        $(window).resize(function() { window.__slider.refresh(); });
+        $(window).resize(function() { window.__slider.redrawSlider(); });
     });
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <style type="text/css">
-    #posts_slider    { font-family: 'Noto Serif', 'Times New Roman', 'Times Roman', serif; font-size: 14pt; }
-    #posts_slider    { margin-bottom: 20px; padding: 0; background-color: transparent;
-                       color: rgba(255, 255, 255, .7); text-shadow: 1px 1px 3px black; }
-    #posts_slider li { padding: 20px 60px; }
-    .sy-pager        { margin-top: 20px; padding-bottom: 20px; }
-    .sy-slides-wrap  { <?= $slider_height ?> overflow: hidden; }
+    #posts_slider         { font-family: 'Noto Serif', 'Times New Roman', 'Times Roman', serif; font-size: 14pt; }
+    #posts_slider         { margin-bottom: 20px; padding: 0; background-color: transparent;
+                            color: rgba(255, 255, 255, .7); text-shadow: 1px 1px 3px black; }
+    #posts_slider li      { padding: 20px 60px; }
+    .bx-wrapper           { background: transparent; border: none; box-shadow: none; margin-bottom: 0; }
+    .bx-viewport          { <?= $slider_height ?> }
+    .bx-wrapper .bx-pager { bottom: 10px; }
 </style>
 
 <ul id="posts_slider">
@@ -157,7 +165,7 @@ if( $cache_ttl > 0 ) ob_start();
         $style = $index > 1 ? "display: none" : "";
         $index++;
         ?>
-        <li style="<?= $style ?>">
+        <li>
             <?= $contents ?>
         </li>
     <? endforeach; ?>
