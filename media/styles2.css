@@ -123,9 +123,9 @@ body.admin h1 { color: white; background-color: #3DA4DF; border-color: #3DA4DF; 
 body.admin h2 { color: white; background-color: #3DA4DF; border-color: #3DA4DF; }
 body.admin h3 { color: white; background-color: #3DA4DF; border-color: #3DA4DF; }
 
-body.admin h1 a, body.admin h1 .pseudo_link { color: #00BFFF; }
-body.admin h2 a, body.admin h2 .pseudo_link { color: #00BFFF; }
-body.admin h3 a, body.admin h3 .pseudo_link { color: #00BFFF; }
+body.admin h1 a, body.admin h1 .pseudo_link { color: white; }
+body.admin h2 a, body.admin h2 .pseudo_link { color: white; }
+body.admin h3 a, body.admin h3 .pseudo_link { color: white; }
 
 #footer hr      { border-style: solid; border-color: #545490; }
 #footer .bullet { color: #545490; margin-left: 10px; }
