@@ -126,7 +126,7 @@ if( $cache_ttl > 0 ) ob_start();
     #posts_slider li      { padding: 20px 60px; }
     .bx-wrapper           { background: transparent; border: none; box-shadow: none; margin-bottom: 0; }
     .bx-viewport          { <?= $slider_height ?> }
-    .bx-wrapper .bx-pager { bottom: 10px; }
+    .bx-wrapper .bx-pager { bottom: 10px; padding-top: 0; }
 </style>
 
 <ul id="posts_slider">
