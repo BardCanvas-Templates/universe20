@@ -175,6 +175,10 @@ body.admin h1 a.framed_content, body.admin h1 .pseudo_link.framed_content { colo
 body.admin h2 a.framed_content, body.admin h2 .pseudo_link.framed_content { color: #22266D; text-decoration: none; }
 body.admin h3 a.framed_content, body.admin h3 .pseudo_link.framed_content { color: #22266D; text-decoration: none; }
 
+h1 .framed_content, h2 .framed_content, h3 .framed_content {
+    font-size: 0.7em;
+}
+
 /* Media lists on record browsers */
 
 .media_bullet         { padding: 0 0 4px 22px; margin-bottom: 2px; position: relative; color: #bf0060;
