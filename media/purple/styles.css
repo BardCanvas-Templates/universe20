@@ -50,8 +50,8 @@ a:active, a:hover, .pseudo_link:active, .pseudo_link:hover { color: #C7AEFF; }
 #header .main_menu_item.current       { color: black; background-color: #f6f8f9; }
 #header .main_menu_item.current:hover { color: black; background-color: #C7AEFF; }
 
-#header .main_menu_item.highlighted               { color: #662d91; background-color: white;   }
-#header .main_menu_item.highlighted:link          { color: #662d91; background-color: white;   }
+#header .main_menu_item.highlighted               { color: #C7AEFF; background-color: transparent;   }
+#header .main_menu_item.highlighted:link          { color: #C7AEFF; background-color: transparent;   }
 #header .main_menu_item.highlighted:hover         { color: #662d91; background-color: #C7AEFF; }
 #header .main_menu_item.highlighted.current       { color: #C7AEFF; background-color: white;   }
 #header .main_menu_item.highlighted.current:hover { color: #C7AEFF; background-color: black;   }
@@ -77,8 +77,8 @@ a:active, a:hover, .pseudo_link:active, .pseudo_link:hover { color: #C7AEFF; }
 .dropdown_menu .main_menu_item.current       { color: black; background-color: #f6f8f9; }
 .dropdown_menu .main_menu_item.current:hover { color: black; background-color: #C7AEFF; }
 
-.dropdown_menu .main_menu_item.highlighted               { color: #662d91; background-color: white;   }
-.dropdown_menu .main_menu_item.highlighted:link          { color: #662d91; background-color: white;   }
+.dropdown_menu .main_menu_item.highlighted               { color: #C7AEFF; background-color: black;   }
+.dropdown_menu .main_menu_item.highlighted:link          { color: #C7AEFF; background-color: black;   }
 .dropdown_menu .main_menu_item.highlighted:hover         { color: #662d91; background-color: #C7AEFF; }
 .dropdown_menu .main_menu_item.highlighted.current       { color: #C7AEFF; background-color: white;   }
 .dropdown_menu .main_menu_item.highlighted.current:hover { color: #C7AEFF; background-color: black;   }

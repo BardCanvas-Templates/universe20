@@ -50,9 +50,9 @@ a:active, a:hover, .pseudo_link:active, .pseudo_link:hover { color: #FF8D91; }
 #header .main_menu_item.current       { color: black;   background-color: #f6f8f9; }
 #header .main_menu_item.current:hover { color: black;   background-color: #FF8D91; }
 
-#header .main_menu_item.highlighted               { color: #ed1c24; background-color: white;   }
-#header .main_menu_item.highlighted:link          { color: #ed1c24; background-color: white;   }
-#header .main_menu_item.highlighted:hover         { color: #ed1c24; background-color: pink;    }
+#header .main_menu_item.highlighted               { color: #FFC0CB; background-color: transparent;   }
+#header .main_menu_item.highlighted:link          { color: #FFC0CB; background-color: transparent;   }
+#header .main_menu_item.highlighted:hover         { color: #ed1c24; background-color: #FFC0CB;    }
 #header .main_menu_item.highlighted.current       { color: maroon;  background-color: #FF8D91; }
 #header .main_menu_item.highlighted.current:hover { color: white;   background-color: #FF8D91; }
 
@@ -77,9 +77,9 @@ a:active, a:hover, .pseudo_link:active, .pseudo_link:hover { color: #FF8D91; }
 .dropdown_menu .main_menu_item.current       { color: black; background-color: #f6f8f9; }
 .dropdown_menu .main_menu_item.current:hover { color: black; background-color: #FF8D91; }
 
-.dropdown_menu .main_menu_item.highlighted               { color: #ed1c24; background-color: white;   }
-.dropdown_menu .main_menu_item.highlighted:link          { color: #ed1c24; background-color: white;   }
-.dropdown_menu .main_menu_item.highlighted:hover         { color: #ed1c24; background-color: pink;    }
+.dropdown_menu .main_menu_item.highlighted               { color: #FFC0CB; background-color: black;   }
+.dropdown_menu .main_menu_item.highlighted:link          { color: #FFC0CB; background-color: black;   }
+.dropdown_menu .main_menu_item.highlighted:hover         { color: #ed1c24; background-color: #FFC0CB; }
 .dropdown_menu .main_menu_item.highlighted.current       { color: maroon;  background-color: #FF8D91; }
 .dropdown_menu .main_menu_item.highlighted.current:hover { color: white;   background-color: #FF8D91; }
 

@@ -49,8 +49,8 @@ a.framed_content, .pseudo_link.framed_content { text-decoration: none; }
 #header .main_menu_item.current       { color: #22266D; background-color: #f6f8f9; }
 #header .main_menu_item.current:hover { color: #22266D; background-color: #47baff; }
 
-#header .main_menu_item.highlighted               { color: #a2ddff; background-color: #3DA4DF; }
-#header .main_menu_item.highlighted:link          { color: #a2ddff; background-color: #3DA4DF; }
+#header .main_menu_item.highlighted               { color: #a2ddff; background-color: transparent; }
+#header .main_menu_item.highlighted:link          { color: #a2ddff; background-color: transparent; }
 #header .main_menu_item.highlighted:hover         { color: white; background-color: #44bdff; }
 #header .main_menu_item.highlighted.current       { color: black; background-color: #358cbf; }
 #header .main_menu_item.highlighted.current:hover { color: black; background-color: #97d5ff; }
