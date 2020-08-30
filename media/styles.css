@@ -47,9 +47,9 @@ h1 a.small:after  { content: ']' }
 
 /* Forms */
 
-#post_form  textarea[name="title"]  { font-family: 'Exo', Arial, Helvetica, sans-serif; font-size: 18pt; min-height: 34px; height: 34px; }
-#media_form textarea[name="title"]  { font-family: 'Exo', Arial, Helvetica, sans-serif; font-size: 18pt; min-height: 34px; height: 34px; }
-#post_form textarea[name="excerpt"] { font-family: 'Exo', Arial, Helvetica, sans-serif; font-size: 12pt; min-height: 30px; height: 30px; }
+#post_form  textarea[name="title"]   { font-family: 'Exo', Arial, Helvetica, sans-serif;        font-size: 18pt; min-height: 34px; height: 34px; }
+#media_form textarea[name="title"]   { font-family: 'Exo', Arial, Helvetica, sans-serif;        font-size: 18pt; min-height: 34px; height: 34px; }
+#post_form  textarea[name="excerpt"] { font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 12pt; min-height: 30px; height: 30px; }
 
 body.mce-content-body { background-color: white; margin: 0 10px; }
 
