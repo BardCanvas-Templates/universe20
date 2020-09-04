@@ -83,17 +83,17 @@ a:active, a:hover, .pseudo_link:active, .pseudo_link:hover { color: #FFCC00; }
 .dropdown_menu .main_menu_item.highlighted.current       { color: #FFEB7E; background-color: #f7cf00; }
 .dropdown_menu .main_menu_item.highlighted.current:hover { color: white;   background-color: #f7cf00; }
 
-.framed_content                 { border: 2px solid whitesmoke; background-color: #fafafa; color: black; }
-.framed_content.state_disabled  { background-color: silver;  border-color: #a7a7a7;  color: #585858; }
-.framed_content.state_warning   { background-color: #fff1a0; border-color: #eadc8d; color: black;   }
-.framed_content.state_ko        { background-color: #EDCCC9; border-color: #d7b6b3; color: black;   }
-.framed_content.state_ok        { background-color: #C0FFC0; border-color: #aeecae; color: black;   }
-.framed_content.state_highlight { background-color: #fff1a0; border-color: #f1e393; color: black;   }
-.framed_content.state_active    { background-color: #FAEEE2; border-color: #dc9340; color: black;   }
-.framed_content.state_hover     { background-color: #f7cf00; border-color: #f7cf00; color: black;   }
+/*.framed_content                 { border: 2px solid whitesmoke; background-color: #fafafa; color: black; }*/
+/*.framed_content.state_disabled  { background-color: silver;  border-color: #a7a7a7;  color: #585858; }*/
+/*.framed_content.state_warning   { background-color: #fff1a0; border-color: #eadc8d; color: black;   }*/
+/*.framed_content.state_ko        { background-color: #EDCCC9; border-color: #d7b6b3; color: black;   }*/
+/*.framed_content.state_ok        { background-color: #C0FFC0; border-color: #aeecae; color: black;   }*/
+/*.framed_content.state_highlight { background-color: #fff1a0; border-color: #f1e393; color: black;   }*/
+/*.framed_content.state_active    { background-color: #FAEEE2; border-color: #dc9340; color: black;   }*/
+/*.framed_content.state_hover     { background-color: #f7cf00; border-color: #f7cf00; color: black;   }*/
 
-.framed_content.state_hover:hover { background-color: #f7cf00; border-color: #f7cf00; color: black;   }
-.framed_radios label:hover        { background-color: #f7cf00; border-color: #f7cf00; color: black; }
+/*.framed_content.state_hover:hover { background-color: #f7cf00; border-color: #f7cf00; color: black;   }*/
+/*.framed_radios label:hover        { background-color: #f7cf00; border-color: #f7cf00; color: black; }*/
 
 section > h1 { color: white; background-color: #dc9340; border: 2px solid #dc9340; }
 section > h2 { color: white; background-color: #dc9340; border: 2px solid #dc9340; }
