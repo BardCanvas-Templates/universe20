@@ -88,7 +88,7 @@ a.framed_content, .pseudo_link.framed_content { text-decoration: none; }
 .framed_content.state_ko        { background-color: #EDCCC9; border-color: #d7b6b3; color: black;   }
 .framed_content.state_ok        { background-color: #C0FFC0; border-color: #aeecae; color: black;   }
 .framed_content.state_highlight { background-color: #fff1a0; border-color: #f1e393; color: black;   }
-.framed_content.state_active    { background-color: #BBDDFF; border-color: #8fa3c1; color: black;   }
+.framed_content.state_active    { background-color: #BBDDFF; border-color: #abcdef; color: black;   }
 .framed_content.state_hover     { background-color: #42A0FF; border-color: #42A0FF; color: white;   }
 
 .framed_content.state_hover:hover { background-color: #42A0FF; border-color: #42A0FF; color: white;   }
