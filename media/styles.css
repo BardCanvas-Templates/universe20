@@ -31,6 +31,7 @@ td       { font-family: 'Roboto Condensed', 'Arial Narrow', Arial, Helvetica, sa
 #footer  { font-family: Arial, Helvetica, sans-serif; font-size: 11pt; }
 #content { line-height: 1.2em; padding-top: 20px; }
 
+#admin_menu { font-family: 'roboto condensed', 'arial narrow', arial, helvetica, sans-serif; font-size: 10pt; }
 .dropdown_menu { font-family: Arial, Helvetica, sans-serif; }
 body.popup { background-color: transparent; }
 
