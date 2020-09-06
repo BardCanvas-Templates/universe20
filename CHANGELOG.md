@@ -1,6 +1,11 @@
 
 # Universe20 Template Change Log
 
+## [1.0.4] - 2020-09-06
+
+- Tuned root framed content classes and removed theme based ones.
+- Changed admin menu font.
+
 ## [1.0.3] - 2020-09-03
 
 - Tuned CSS.
