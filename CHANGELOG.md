@@ -1,6 +1,10 @@
 
 # Universe20 Template Change Log
 
+## [1.0.5] - 2020-09-18
+
+- Slider CSS tuning. 
+
 ## [1.0.4] - 2020-09-06
 
 - Tuned root framed content classes and removed theme based ones.
