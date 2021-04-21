@@ -1,6 +1,10 @@
 
 # Universe20 Template Change Log
 
+## [1.0.6] - 2021-04-20
+
+- Tuned the contact section on the user profile home.
+
 ## [1.0.5] - 2020-09-18
 
 - Slider CSS tuning. 
