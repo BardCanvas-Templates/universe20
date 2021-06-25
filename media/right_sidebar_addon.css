@@ -16,7 +16,7 @@
 /* Default dimensions, for everything above  720px */
 #content                 { width: calc(100% - 150px - 240px); float: left; }
 #content.no_left_sidebar { width: calc(100% - 220px); float: left; }
-#right_sidebar           { width: 240px; margin-right: -5px; }
+#right_sidebar           { width: 240px; margin-right: -3px; }
 
 @media all and (min-width: 100px) and (max-width: 720px)
 {
