@@ -111,6 +111,9 @@ if( $cache_ttl > 0 ) ob_start();
             responsive: true,
             touchEnabled: false,
             pause: 10000,
+            onSliderLoad: function(){
+                $("#posts_slider li").removeClass('other_slide');
+            }
         });
         
         $(window).resize(function() { window.__slider.redrawSlider(); });
@@ -127,6 +130,7 @@ if( $cache_ttl > 0 ) ob_start();
     .bx-viewport          { <?= $slider_height ?> }
     .bx-wrapper .bx-pager { bottom: 5px; padding-top: 0; }
     .bx-wrapper li img    { display: initial; }
+    li.other_slide        { height: 0; overflow: hidden; visibility: hidden; }
 </style>
 
 <ul id="posts_slider">
@@ -163,10 +167,10 @@ if( $cache_ttl > 0 ) ob_start();
         // $contents = convert_emojis($contents);
         $contents = $post->get_processed_content();
         
-        $style = $index > 1 ? "display: none" : "";
+        $class = $index > 1 ? "other_slide" : "";
         $index++;
         
-        echo "<li>$contents</li>";
+        echo "<li class='$class'>$contents</li>";
     }
     ?>
     
