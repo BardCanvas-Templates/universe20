@@ -109,9 +109,8 @@ if( $cache_ttl > 0 ) ob_start();
             captions: false,
             adaptiveHeight: <?= $adaptive_height ?>,
             responsive: true,
-            touchEnabled: true,
+            touchEnabled: false,
             pause: 10000,
-            
         });
         
         $(window).resize(function() { window.__slider.redrawSlider(); });
@@ -127,6 +126,7 @@ if( $cache_ttl > 0 ) ob_start();
     .bx-wrapper           { background: transparent; border: none; box-shadow: none; margin-bottom: 0; }
     .bx-viewport          { <?= $slider_height ?> }
     .bx-wrapper .bx-pager { bottom: 5px; padding-top: 0; }
+    .bx-wrapper li img    { display: initial; }
 </style>
 
 <ul id="posts_slider">
@@ -158,9 +158,10 @@ if( $cache_ttl > 0 ) ob_start();
             $post_image = "{$config->full_root_path}/media/spacer.png";
         }
         
-        $contents = $post->content;
-        $contents = convert_shortcodes($contents);
-        $contents = convert_emojis($contents);
+        // $contents = $post->content;
+        // $contents = convert_shortcodes($contents);
+        // $contents = convert_emojis($contents);
+        $contents = $post->get_processed_content();
         
         $style = $index > 1 ? "display: none" : "";
         $index++;
