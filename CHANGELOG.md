@@ -1,6 +1,15 @@
 
 # Universe20 Template Change Log
 
+## [1.1.0] - 2021-07-05
+
+- Fixed CSS on right sidebar.
+- Slider tuning:
+  - Removed touch sensibility to allow placing links.
+  - Allowed full content processing in posts.
+  - Tuned styles.
+  - Hidden slides other than the first on before load.
+
 ## [1.0.6] - 2021-04-20
 
 - Tuned the contact section on the user profile home.
