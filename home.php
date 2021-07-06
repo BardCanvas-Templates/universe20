@@ -79,7 +79,7 @@ header("Content-Type: text/html; charset=utf-8"); ?>
     ?>
     
     <!-- Overrides -->
-    <link rel="stylesheet" type="text/css" href="<?= $template->url ?>/media/styles2~v<?= "{$template->version}-6" ?>.css">
+    <link rel="stylesheet" type="text/css" href="<?= $template->url ?>/media/styles2~v<?= "{$template->version}-7" ?>.css">
     <link rel="stylesheet" type="text/css" href="<?= $template->url ?>/media/home_sections~v<?= "{$template->version}-1" ?>.css">
     <? if( ! empty($theme) ): ?>
         <link rel="stylesheet" type="text/css" 
