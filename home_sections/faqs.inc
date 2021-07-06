@@ -38,13 +38,13 @@ if( empty($limit) ) $limit = 5;
 
 switch($order)
 {
-    case "":        $order = "publishing_date asc";             break;
-    case "newer":   $order = "publishing_date desc";            break;
-    case "popular": $order = "views desc, publishing_date asc"; break;
+    case "":        $order = "publishing_date asc";              break;
+    case "newer":   $order = "publishing_date desc";             break;
+    case "popular": $order = "views desc, publishing_date desc"; break;
 }
 
 
-$faqs = $repository->find($filter, $limite, 0, $order);
+$faqs = $repository->find($filter, $limit, 0, $order);
 if( count($faqs) == 0 )
 {
     if( $cache_ttl > 0 )
