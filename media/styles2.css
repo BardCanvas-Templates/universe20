@@ -224,5 +224,5 @@ a, a:link, .pseudo_link { text-decoration: none; }
 
 .ellipsified { display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
-#content.no_left_sidebar.no_right_sidebar { width: 100%; }
+#content.no_left_sidebar.no_right_sidebar { width: calc(100% - 3px); }
 /*.disabled { pointer-events: none; }*/
