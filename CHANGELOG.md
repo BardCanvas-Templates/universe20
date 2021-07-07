@@ -1,6 +1,11 @@
 
 # Universe20 Template Change Log
 
+## [1.1.1] - 2021-07-06
+
+- Fixed issues in the FAQs section.
+- Fixed horizontal scrollbar showing on certain unwanted circumstances.
+
 ## [1.1.0] - 2021-07-05
 
 - Fixed CSS on right sidebar.
