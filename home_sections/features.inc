@@ -1,6 +1,8 @@
 <?php
-
 global $settings;
+
+if( $settings->get("templates:universe20.hide_all_home_sections_for_logged_in_users") == "true"
+    && $account->_exists ) return;
 
 $title   = $settings->get("templates:universe20.features_title");
 $icons   = array();

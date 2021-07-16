@@ -14,6 +14,8 @@ use hng2_base\template;
 use hng2_modules\posts\posts_repository;
 
 if( $template->get("exclude_home_slider") ) return;
+if( $settings->get("templates:universe20.hide_all_home_sections_for_logged_in_users") == "true"
+    && $account->_exists ) return;
 
 $cache_ver = (int) $settings->get("templates:universe20.slider_cache_version");
 $cache_ttl = (int) $settings->get("templates:universe20.slider_cache_ttl");

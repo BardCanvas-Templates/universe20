@@ -3,6 +3,9 @@ use hng2_modules\posts\posts_repository;
 
 global $settings;
 
+if( $settings->get("templates:universe20.hide_all_home_sections_for_logged_in_users") == "true"
+    && $account->_exists ) return;
+
 $cache_ver = (int) $settings->get("templates:universe20.faqs_cache_version");
 $cache_ttl = (int) $settings->get("templates:universe20.faqs_cache_ttl");
 $cache_key = "universe20_template.faqs/v{$this_module->version}-$cache_ver";

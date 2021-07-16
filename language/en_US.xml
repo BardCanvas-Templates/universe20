@@ -55,6 +55,18 @@
             ]]></description>
             <type>code</type>
         </specs>
+        
+        <specs key="hide_all_home_sections_for_logged_in_users">
+            <title>Hide all home sections for logged in users</title>
+            <description><![CDATA[
+                By enabling this option, only the posts index and other content
+                extenders will be shown to users with an open session.<br>
+                <i class="fa fa-warning"></i> <b>Warning:</b>
+                Make sure that you have the posts index enabled or other modules
+                showing contents on the home, or users will get an empty page.
+            ]]></description>
+            <type>boolean</type>
+        </specs>
         <!-- endregion Appearance -->
         
         <!-- region Home slider -->

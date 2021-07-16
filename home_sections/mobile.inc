@@ -1,6 +1,8 @@
 <?php
-
 global $settings;
+
+if( $settings->get("templates:universe20.hide_all_home_sections_for_logged_in_users") == "true"
+    && $account->_exists ) return;
 
 $markup = $settings->get("templates:universe20.mobile_left");
 $shot   = $settings->get("templates:universe20.mobile_shot");
