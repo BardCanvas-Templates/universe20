@@ -1,6 +1,10 @@
 
 # Universe20 Template Change Log
 
+## [1.1.2] - 2021-07-20
+
+- Added option to hide all home segments for logged in users.
+
 ## [1.1.1] - 2021-07-06
 
 - Fixed issues in the FAQs section.
