@@ -1,6 +1,10 @@
 
 # Universe20 Template Change Log
 
+## [1.1.3] - 2025-04-13
+
+- Added support for hiding restricted tabs on the user profile home.
+
 ## [1.1.2] - 2021-07-20
 
 - Added option to hide all home segments for logged in users.
